@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d576eac7-efc7-47d9-b487-8ea20facbb6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laboratorium-7-jmaciejewski.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laboratorium-7-jmaciejewski.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NotesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NotesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NotesStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/NoteServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/NotesStorageMock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -36,7 +37,36 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.NoteTest">
+  <component name="RunManager" selected="JUnit.NoteServiceImplTest.test_clear_method">
+    <configuration name="NoteServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="laboratorium-7-jmaciejewski" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NoteServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteServiceImplTest.test_averageOf_method" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="laboratorium-7-jmaciejewski" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NoteServiceImplTest" />
+      <option name="METHOD_NAME" value="test_averageOf_method" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteServiceImplTest.test_clear_method" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="laboratorium-7-jmaciejewski" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NoteServiceImplTest" />
+      <option name="METHOD_NAME" value="test_clear_method" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Note" />
       <option name="PACKAGE_NAME" value="" />
@@ -56,21 +86,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoteTest.test_pass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Note" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NoteTest" />
-      <option name="METHOD_NAME" value="test_pass" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NoteServiceImplTest.test_clear_method" />
+        <item itemvalue="JUnit.NoteServiceImplTest.test_averageOf_method" />
+        <item itemvalue="JUnit.NoteServiceImplTest" />
         <item itemvalue="JUnit.NoteTest" />
         <item itemvalue="JUnit.NoteTest.test_name_null" />
-        <item itemvalue="JUnit.NoteTest.test_pass" />
       </list>
     </recent_temporary>
   </component>
@@ -88,21 +110,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="817" height="210" key="GridCell.Tab.0.bottom" timestamp="1585577032040">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1585582253568">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="817" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585577032040" />
-    <state width="817" height="210" key="GridCell.Tab.0.center" timestamp="1585577032039">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585582253568" />
+    <state width="1493" height="198" key="GridCell.Tab.0.bottom" timestamp="1585584345918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="817" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585577032039" />
-    <state width="817" height="210" key="GridCell.Tab.0.left" timestamp="1585577032039">
+    <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585584345918" />
+    <state width="1493" height="198" key="GridCell.Tab.0.center" timestamp="1585584345918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="817" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585577032039" />
-    <state width="817" height="210" key="GridCell.Tab.0.right" timestamp="1585577032039">
+    <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585584345918" />
+    <state width="1493" height="198" key="GridCell.Tab.0.left" timestamp="1585584345918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="817" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585577032039" />
+    <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585584345918" />
+    <state width="1493" height="198" key="GridCell.Tab.0.right" timestamp="1585584345918">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585584345918" />
   </component>
 </project>
