@@ -13,11 +13,13 @@ public class NoteServiceImplTest {
     Note note;
     Note note2;
     Note note3;
+    NotesStorage notesStorage;
     @BeforeEach
     public void set_up() {
         notes = new ArrayList<>();
         note = Note.of("test", 2.0f);
-        notesService = NotesServiceImpl.createWith(new NotesStorageMock(notes));
+        notesStorage = new NotesStorageMock(notes);
+        notesService = NotesServiceImpl.createWith(notesStorage);
     }
 
     @Test
